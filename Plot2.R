@@ -1,0 +1,5 @@
+source("loaddata.R")
+GAP <- as.numeric(subsetdata$Global_active_power)
+png("plot2.png", width=480, height=480, units = "px", bg = "transparent")
+plot(DateTime, GAP, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()
